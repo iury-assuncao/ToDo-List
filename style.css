@@ -1,0 +1,40 @@
+*{
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+section{
+    width: 70%;
+    height: 80%;
+    background-color: rgb(161, 161, 161);
+    display: flex;
+    justify-content: center;
+
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.botoes_list{
+    display: inline-block;
+}
