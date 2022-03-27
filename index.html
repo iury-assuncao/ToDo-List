@@ -5,46 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css"/>
+
+    <!--importando fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>To Do List</title>
 </head>
 <body>
 
+
+    <header>
+        <h2>Lista de tarefas</h2>
+    </header>
+
     <section>
 
-        <h2>Lista de tarefas</h2>
+        <div class="card_tarefa">
+            <input type="text" placeholder="Adicione uma nova tarefa" />
 
-        <main>
+            <button type="submit" name="adcionar"><img src="./imgs/add.png" alt="Adicionar tarefa"/></button>
+        </div> 
 
-            <div>
-                <input type="text" placeholder="Adicione uma nova tarefa" />
+        <div >
+            <ul>
+                <li class="card_tarefa">
+                    <div class="text">
+                        <p>Tarefa 1</p>
+     
+                    </div>
+                    <div class="botoes_list">
+                        <button class="edit"><img src="./imgs/edit.png"/></button>
+                        <button class="remove"><img src="./imgs/remove.png"/></button>
+                    </div>
+                
+                </li>
 
-                <button type="submit" name="adcionar"><img src="./imgs/add.png" alt="Adicionar tarefa"/></button>
-            </div> 
-
-            <div>
-                <ul>
-
-                    <li>Tarefa 1 
-                        <div class="botoes_list">
-                        
-                            <button class="edit"><img src="./imgs/edit.png"/></button>
-                            <button class="remove"><img src="./imgs/remove.png"/></button>
-
-                        </div>
-                    
-                    </li>
-
-                    
-
-
-
-                </ul>
-            </div>
-
-
-
-        </main>
-
+            </ul>
+        </div>
 
     </section>
 
