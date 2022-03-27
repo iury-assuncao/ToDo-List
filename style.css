@@ -152,3 +152,32 @@ section{
 
 }
 
+@media (max-width: 590px) { 
+
+    header{
+        width: 90%;
+                
+    }
+
+    section{
+        width: 85.8%
+    }
+
+    button{
+        width: 3rem;
+        height: 3rem;
+        
+    }
+
+    button img{
+        width: 2rem;
+    }
+    .text{
+        font-size: 2rem;
+    }
+
+
+
+
+}
+
