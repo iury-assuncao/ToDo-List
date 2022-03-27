@@ -1,0 +1,183 @@
+*{
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #414141;
+    font-family: 'Roboto';
+
+    
+}
+
+button{
+    width: 4.5rem;
+    height: 4.5rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+    
+
+}
+
+button img{
+    width: 2.5rem;
+    
+}
+
+button img:hover{
+    width: 3rem;
+    transition: 0.3s;
+}
+
+header{
+    width: 52.73%;
+    height: 14.5rem;
+    background: #0042AB;
+    border-radius: 1rem;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    margin-top: 2rem;
+    padding-top: 3rem;
+    
+}
+
+section{
+    z-index: 10;
+    margin-top: -4rem;
+    width: 46.8%
+    
+    
+}
+
+.card_adicionar{
+    width: 100%;
+    height: 8rem;
+    background-color: #2C72E5;
+    border-radius: 1rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0rem 2rem;
+}
+
+.card_adicionar input{
+    height: 4.5rem;
+    width: 74.5%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    border:none;
+    padding: 1.9rem;
+
+}
+
+
+
+.card_tarefa input::placeholder{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #767676;
+
+}
+
+.card_tarefa{
+    width: 100%;
+    height: 8rem;
+    background-color: #2C72E5;
+    border-radius: 1rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0rem 2rem;
+}
+
+
+.text{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    
+}
+
+
+.botoes_list{
+    display: flex;
+    gap:1rem;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 920px) { 
+
+    header{
+        width: 80%;
+                
+    }
+
+    section{
+        width: 70.8%
+    }
+
+
+
+}
+
+@media (max-width: 590px) { 
+
+    header{
+        width: 90%;
+                
+    }
+
+    section{
+        width: 85.8%
+    }
+
+    button{
+        width: 3rem;
+        height: 3rem;
+        
+    }
+
+    button img{
+        width: 2rem;
+    }
+    .text{
+        font-size: 2rem;
+    }
+
+
+
+
+}
+
