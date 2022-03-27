@@ -46,6 +46,8 @@ button img:hover{
     transition: 0.3s;
 }
 
+
+
 header{
     width: 52.73%;
     height: 14.5rem;
@@ -90,9 +92,9 @@ section{
     border-radius: 1rem;
     border:none;
     padding: 1.9rem;
+    outline: none;
 
 }
-
 
 
 .card_tarefa input::placeholder{
@@ -170,6 +172,10 @@ section{
     }
 
     button img{
+        width: 2rem;
+    }
+
+    button img:hover{
         width: 2rem;
     }
     .text{
