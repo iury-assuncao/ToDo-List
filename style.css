@@ -96,8 +96,7 @@ section{
 
 }
 
-
-.card_tarefa input::placeholder{
+.card_adicionar input::placeholder{
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 1.6rem;
@@ -105,7 +104,7 @@ section{
 
 }
 
-.card_tarefa{
+#lista_tarefas li{
     width: 100%;
     height: 8rem;
     background-color: #2C72E5;
@@ -124,19 +123,6 @@ section{
     color: #FFFFFF;
     
 }
-
-
-.botoes_list{
-    display: flex;
-    gap:1rem;
-    justify-content: flex-end;
-}
-
-
-
-
-
-
 
 
 @media (max-width: 920px) { 

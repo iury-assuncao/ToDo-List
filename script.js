@@ -1,74 +1,60 @@
 
-const addBotao = document.querySelector("#adicionar");
+let addBotao = document.querySelector("#adicionar");
+let tarefa = document.getElementById('lista_tarefas');
+let inputNovaTarefa = document.getElementById('nova_tarefa');
 
-const tarefas = [ ];
-
-// Função para validar input
-
-
-addBotao.addEventListener('click', (e)=>{
+// função para adicionar ao precionar enter
+addBotao.addEventListener('click',(e)=>{
     e.preventDefault();
 
-    let novaTarefa = document.getElementById('nova_tarefa').value
+        let tarefas = {
+            nome: inputNovaTarefa.value,
+            id:gerarId(),
+        }
 
-    
-    if(novaTarefa !=''){
+        adicionarTarefa(tarefas);
+});
 
-        tarefas.push(novaTarefa);     
-
-        document.getElementById('nova_tarefa').value=''; 
-
-        console.log(tarefas);
-
-        renderTarefas(tarefas);
-
-    }
-
-    else{
-        window.alert("Insira uma nova tarefa");
-    }
-    
-    
-})
-
-//funcao mostrar cards de tarefas 
-
-const renderTarefas = (tarefas) => {
-
-    let cardTarefa = document.getElementById('lista_tarefas')
-
-    cardTarefa.innerHTML = ` `;
-
-    for(i=0;i<tarefas.length;i++){
-
-        cardTarefa.innerHTML += `
-            <li class="card_tarefa">
-                    
-                <p class="text">${tarefas[i]}</p>
-               
-                
-                <div class="botoes_list">
-                    <button class="edit" id="editar"><img src="./imgs/edit.png"/></button>
-                    <button class="remove" id="remover" onclick="removerTarefas(cardTarefa)"><img src="./imgs/remove.png"/></button>
-
-                </div>
-            
-            </li>
-        `;
-
-    }
-    
+function gerarId(){
+    return Math.floor(Math.random() * 3000);
 };
 
-//funcao remover os cards de tarefas 
+function adicionarTarefa(tarefas){
+    let li = criarLi(tarefas)
+    tarefa.appendChild(li);
+    
+    inputNovaTarefa.value = '';
 
-const removerTarefas = (cardTarefa) => {
+}
+
+function criarLi(tarefas){
+    let li = document.createElement('li');
+    
+
+    let p = document.createElement('p');
+    p.classList.add('text');
+    p.innerHTML = tarefas.nome;
 
 
-        tarefas.splice(cardTarefa);
+    let btnRemover = document.createElement('button');
+    btnRemover.innerHTML = `<img src="./imgs/remove.png"/>`;
+
+    li.appendChild(p);
+    li.appendChild(btnRemover);
+
+    return li;
 
 
-};
+}
+
+
+
+
+    
+        
+    
+
+
 
 
 
